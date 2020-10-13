@@ -1,0 +1,18 @@
+/*--font family assistant--*/
+
+@font-face{
+    font-family: Assistant;
+    src:url(../fonts/Assistant/Assistant-Regular.ttf);
+}
+
+/*--font family Hind_siliguri--*/
+@font-face{
+    font-family:Hind_siliguri;
+    src:url(../fonts/Hind_Siliguri/HindSiliguri-Regular.ttf);
+}
+/*--font family M_PLUS_1P--*/
+@font-face{
+    font-family:M_PLUS_1P;
+    src:url(../fonts/M_PLUS_1p/MPLUS1p-Regular.ttf);
+}
+

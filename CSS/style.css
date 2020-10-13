@@ -1,0 +1,121 @@
+
+/*to link css into css */
+
+@import url(../CSS/fonts.css);
+
+html,body{
+    margin: 0%;
+    box-sizing:border-box;
+    overflow-x:hidden;
+}
+
+:root{
+
+    /*variable theme colors*/
+
+    --text-grey:#3f4954;
+    --text-light:#686666da;
+    --bg-color: #0f0f0f;
+    --white: #ffffff;
+    --midnight:#104f55;
+    --grey:#f4f1de;
+
+
+
+    /*gradient colors*/
+    --sky: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
+
+    /* using differnt font on th site */
+    --Assistant:'Assistant' cursive;
+    --Hind_Siliguri:'Hind_Siliguri' cursive;
+    --M_PLUS_1P:'M_PLUS_1P' cursive;
+}
+
+/*------------global classes----------*/
+
+a{
+    text-decoration: none;
+}
+
+.flex-row{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+ul{
+    list-style-type: none;
+}
+
+/*------x------global classes----x------*/
+
+
+/*-------------navbar------------------*/
+.nav {
+    background:white;
+    padding: 0 2rem;
+    height: 0rem;
+    min-height: 40vh;
+    overflow:hidden;
+}
+
+.nav .nav-menu{
+    justify-content: space-between;
+}
+
+.nav .nav-items{
+    display: flex;
+    margin:0;
+}
+
+.nav .nav-items .nav-link{
+    padding: 1.6rem 1rem;
+    font-size:1.1rem;
+    position:relative;
+    font-family:var(--Assistant);
+    font-size:1.1rem;
+}
+
+/*to hover above the links showing midnight color*/
+
+.nav .nav-items .nav-link:hover{
+background-color:var(--grey);
+}
+
+.nav .nav-items .nav-link:hover a{
+    color:var(--midnight);
+}
+.nav .social{
+    padding:1.4rem 0;
+}
+
+.nav .social i{
+    padding:0 0.2rem;
+}
+
+.nav .social i:hover{
+    color:#06d6a0;
+}
+.nav .nav-brand a{
+    font-size: 1.6rem;
+    padding: 1rem 0;
+    display: block;
+    font-family: var(--Hind_Siliguri);
+    font-size:1.6rem;
+}
+
+
+/*------x------navbar--------x------*/
+
+
+
+
+/*       viewport less than or equal to  750px           */
+
+@media only screen and (max-width: 750px){
+    .nav .nav-menu, .nav .nav-items{
+        flex-direction: column;
+    }
+}
+
+/*    x    viewport less than or equal to  750px    x   */
