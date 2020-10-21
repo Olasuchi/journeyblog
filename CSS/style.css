@@ -47,6 +47,29 @@ ul{
     list-style-type: none;
 }
 
+h1{
+    font-family: var(--Lexend);
+    font-size: 2.5rem;
+}
+
+h2{
+    font-family:var(--Abel);
+
+}
+
+h3{
+    font-family: var(--Lexend);
+    font-size: 1.3rem;
+}
+
+button.btn{
+    border: none;
+    border-radius: 2rem;
+    padding: 1rem 3rem;
+    font-family: var(--Livvic);
+    cursor: pointer;
+}
+
 /*------x------global classes----x------*/
 
 
@@ -131,8 +154,48 @@ background-color:var(--grey);
 
 /*------x------navbar--------x------*/
 
+/*-------main content--------*/
+
+/*--------site title-----------*/
 
 
+/*setting background image with dispalce text on screen*/
+main .site-title{
+    background: url('../assets/Background-image.png');
+    background-size: cover;
+    height: 110vh;
+    display: flex;
+    justify-content: center;
+}
+ 
+main .site-title .site-background{
+    padding-top: 10rem;
+    text-align: center;
+    color: var(--white);
+}
+
+/*giving the titles space*/
+
+main .site-title h1, h3{
+    margin:.3rem;
+}
+ 
+/*setting explore color and space*/
+main .site-title .btn{
+    margin:1.8rem;
+    background: var(--sky);
+}
+
+/* setting the explore button*/
+main .site-title .btn:hover{
+    background:transparent;
+    border:1px solid var(--white);
+    color: var(--white);
+}
+
+/*------x--site title---x-----*/
+
+/*----x---main content----x----*/
 
 /*       viewport less than or equal to  750px           */
 
