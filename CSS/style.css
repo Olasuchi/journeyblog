@@ -82,6 +82,11 @@ span{
     color:var(--text-grey);
 }
 
+p{
+    font-family: var(--Lexend);
+    color: var(--text-light);
+}
+
 /*------x------global classes----x------*/
 
 
@@ -331,6 +336,46 @@ main .site-content .post-content > .post-image .img:hover{
     transform: scale(1.3);
 }
 
+/* spacing the comment section*/
+main .site-content .post-content > .post-image .post-info span{
+    margin: 0 .5rem;
+}
+/*designing the title text */
+
+main .post-content .post-title a{
+    font-family: var(--Anton);
+    font-size: 1.5rem;
+    color: var(--text-gray);
+
+}
+
+/*designing the read more button under the post content*/
+.site-content .post-content .post-title .post-btn{
+    border-radius: 0;
+    padding: .7rem 1.5rem;
+    background: var(--sky);
+}
+
+/*styling the search result pane navigation at the bottom */
+.site-content .pagination{
+    justify-content:center;
+    color: var(--text-gray);
+    margin: 4rem 0;
+}
+
+.site-content .pagination a{
+    padding: .6rem .9rem;
+    color: var(--text-grey);
+    font-family: var(--M_PLUS_1P);
+    border-radius: 2rem;
+    margin: 0 .3rem;
+
+}
+
+.site-content .pagination .pages{
+    background: var(--midnight);
+    color: var(--white);
+}
 /*----x----Site content-----x-----*/
 
 
