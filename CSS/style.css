@@ -70,6 +70,18 @@ button.btn{
     cursor: pointer;
 }
 
+span{
+    font-family: var(--Assistant)
+}
+
+.container{
+    margin: 0 5vw;
+}
+
+.text-gray{
+    color:var(--text-grey);
+}
+
 /*------x------global classes----x------*/
 
 
@@ -202,7 +214,8 @@ main .blog{
     background-repeat: no-repeat;
     background-position: right;
     height: 100vh;
-    width: 100%;
+    width: 95%;
+    background-size: 65%;
 }
 
 main .blog .blog-post{
@@ -214,7 +227,7 @@ main .blog-post .blog-content{
     display: flex;
     flex-direction: column;
     text-align: center;
-    width: 80%;
+    width: 83%;
     margin: 3rem 2rem;
     box-shadow: 0 15px 20px rgba(0, 0, 0, 0.2);
 }
@@ -238,7 +251,89 @@ main .blog-content .btn-blog{
 main .blog-content span{
     display: block;
 }
+
+/*  designing the arrow for navigation*/
+section .container .owl-nav{
+    position:absolute;
+    top:0%;
+    margin: 0 auto;
+    width:80%;
+    padding:30px 0px 0px 0px;
+}
+
+/*still designing the arrow*/
+
+.owl-nav .nav-prev,
+.owl-nav .nav-next{
+    color: var(--text-grey);
+    background:transparent;
+    font-size:2rem;
+}
+
+/*changing the navigation arrow background and design */
+.owl-theme .owl-nav [class*='owl-']:hover{
+    background:transparent;
+    color:var(--midnight);
+}
+
+/*removing the border around the hover navigation arrow */
+.owl-theme .owl-nav [class*='owl-']{
+    outline:none;
+}
+
 /*--x-----Blog carousel------x-------*/
+
+
+
+/*--------Site content----------*/
+
+/*creating a seperate grid for post and side bar */
+main .site-content{
+    display:grid;
+    grid-template-columns: 70% 30%;
+}
+
+/*---- giving the calendar and user icon space from the img and real post*/
+
+main .post-content{
+    width:100%;
+    margin-bottom: 5rem;
+}
+
+main .site-content .post-content > .post-image, .post-title{
+    padding: 1rem 2rem;
+    position: relative;
+}
+
+/* setting the coment, calendar in the middle position of the image post*/
+main .site-content .post-content > .post-image .post-info{
+    background: var(--sky);
+    padding: 1rem;
+    position: absolute;
+    left: 20vw;
+    bottom: 0%;
+    border-radius: 3rem;
+}
+
+/* making effect on the picture post with girl holding a camera*/
+
+
+main .site-content .post-content > .post-image > div{
+    overflow:hidden;
+}
+
+main .site-content .post-content > .post-image .img{
+    width: 100%;
+    transition: all 1s ease;
+}
+
+main .site-content .post-content > .post-image .img:hover{
+    transform: scale(1.3);
+}
+
+/*----x----Site content-----x-----*/
+
+
 
 /*----x---main content----x----*/
 
