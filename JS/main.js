@@ -1,3 +1,18 @@
+const responsive = {
+  0  : {
+    items:1
+  },
+  320 : {
+    items:1
+  },
+  560: {
+    items:2
+  },
+  960: {
+    items:3
+  }
+}
+
 $(document).ready(function(){
 
     $nav=$('.nav');
@@ -18,8 +33,18 @@ $(document).ready(function(){
        autoplayTimeout:3000,
        dots:false,
        nav:true,
-       navText:[$('.owl-navigation .nav-prev'),$('.owl-navigation .nav-next')]
+       navText:[$('.owl-navigation .nav-prev'),$('.owl-navigation .nav-next')],
+       responsive: responsive
      });
 
 
+     //click to scroll to the top move up arrow bottom right corner
+     $('.move-up span').click(function(){
+       $('html,body').animate({
+         scrollTop:0
+       },1000);
+     })
+
+// AOS instance 
+AOS.init();
 });
